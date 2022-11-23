@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "citEeLJ0EBylaYgXnklwfzzGTZRGVVjJD7/dJRv7QY5PEWfBvcnZTS6z64TjFEPZ2leXy/Ce/K/oZKoGSoNa/g==",
+  "success": true,
+  "projectFilePath": "/home/pawil/TicTacToe/TicTacToe.csproj",
+  "expectedPackageFiles": [
+    "/home/pawil/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.10/microsoft.aspnetcore.app.ref.6.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
