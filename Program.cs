@@ -9,30 +9,33 @@ namespace TicTacToe
               else w="krzyżyk";
               if (q==1)DajPlansze();
               Console.Write($"\n\t   Kolej gracza: {w}: ");
+              IdzDo:
               ConsoleKeyInfo o = Console.ReadKey();
                 if (w=="kółko")
               {
-              if (o.Key == ConsoleKey.Q ||o.Key == ConsoleKey.NumPad7) a1='○';
-              if (o.Key == ConsoleKey.W ||o.Key == ConsoleKey.NumPad8) b1='○';
-              if (o.Key == ConsoleKey.E ||o.Key == ConsoleKey.NumPad9) c1='○';
-              if (o.Key == ConsoleKey.A ||o.Key == ConsoleKey.NumPad4) a2='○';
-              if (o.Key == ConsoleKey.S ||o.Key == ConsoleKey.NumPad5) b2='○';
-              if (o.Key == ConsoleKey.D ||o.Key == ConsoleKey.NumPad6) c2='○';
-              if (o.Key == ConsoleKey.Z ||o.Key == ConsoleKey.NumPad1) a3='○';
-              if (o.Key == ConsoleKey.X ||o.Key == ConsoleKey.NumPad2) b3='○';
-              if (o.Key == ConsoleKey.C ||o.Key == ConsoleKey.NumPad3) c3='○';
+              if (o.Key == ConsoleKey.Q ||o.Key == ConsoleKey.NumPad7 || a1==' ') a1='○';
+              else if (o.Key == ConsoleKey.W ||o.Key == ConsoleKey.NumPad8 || b1==' ') b1='○';
+              else if (o.Key == ConsoleKey.E ||o.Key == ConsoleKey.NumPad9 || c1==' ') c1='○';
+              else if (o.Key == ConsoleKey.A ||o.Key == ConsoleKey.NumPad4 || a2==' ') a2='○';
+              else if (o.Key == ConsoleKey.S ||o.Key == ConsoleKey.NumPad5 || b2==' ') b2='○';
+              else if (o.Key == ConsoleKey.D ||o.Key == ConsoleKey.NumPad6 || c2==' ') c2='○';
+              else if (o.Key == ConsoleKey.Z ||o.Key == ConsoleKey.NumPad1 || a3==' ') a3='○';
+              else if (o.Key == ConsoleKey.X ||o.Key == ConsoleKey.NumPad2 || b3==' ') b3='○';
+              else if (o.Key == ConsoleKey.C ||o.Key == ConsoleKey.NumPad3 || c3==' ') c3='○';
+              else goto IdzDo;
               }
                 if (w=="krzyżyk")
               {
-              if (o.Key == ConsoleKey.Q ||o.Key == ConsoleKey.NumPad7) a1='x';
-              if (o.Key == ConsoleKey.W ||o.Key == ConsoleKey.NumPad8) b1='x';
-              if (o.Key == ConsoleKey.E ||o.Key == ConsoleKey.NumPad9) c1='x';
-              if (o.Key == ConsoleKey.A ||o.Key == ConsoleKey.NumPad4) a2='x';
-              if (o.Key == ConsoleKey.S ||o.Key == ConsoleKey.NumPad5) b2='x';
-              if (o.Key == ConsoleKey.D ||o.Key == ConsoleKey.NumPad6) c2='x';
-              if (o.Key == ConsoleKey.Z ||o.Key == ConsoleKey.NumPad1) a3='x';
-              if (o.Key == ConsoleKey.X ||o.Key == ConsoleKey.NumPad2) b3='x';
-              if (o.Key == ConsoleKey.C ||o.Key == ConsoleKey.NumPad3) c3='x';
+              if (o.Key == ConsoleKey.Q ||o.Key == ConsoleKey.NumPad7 || a1==' ') a1='x';
+              else if (o.Key == ConsoleKey.W ||o.Key == ConsoleKey.NumPad8 || b1==' ') b1='x';
+              else if (o.Key == ConsoleKey.E ||o.Key == ConsoleKey.NumPad9 || c1==' ') c1='x';
+              else if (o.Key == ConsoleKey.A ||o.Key == ConsoleKey.NumPad4 || a2==' ') a2='x';
+              else if (o.Key == ConsoleKey.S ||o.Key == ConsoleKey.NumPad5 || b2==' ') b2='x';
+              else if (o.Key == ConsoleKey.D ||o.Key == ConsoleKey.NumPad6 || c2==' ') c2='x';
+              else if (o.Key == ConsoleKey.Z ||o.Key == ConsoleKey.NumPad1 || a3==' ') a3='x';
+              else if (o.Key == ConsoleKey.X ||o.Key == ConsoleKey.NumPad2 || b3==' ') b3='x';
+              else if (o.Key == ConsoleKey.C ||o.Key == ConsoleKey.NumPad3 || c3==' ') c3='x';
+              else goto IdzDo;
               }
                 Console.Clear();
                 DajPlansze(a1,b1,c1,a2,b2,c2,a3,b3,c3);
